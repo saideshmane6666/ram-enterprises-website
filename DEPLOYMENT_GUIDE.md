@@ -379,7 +379,7 @@ Create `send-email.php`:
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents('php://input'), true);
     
-    $to = 'ramdeshmuk30@gmail.com';
+    $to = 'ramdeshmukh30@gmail.com';
     $subject = 'New Inquiry: ' . $data['service'];
     $message = 'Name: ' . $data['fullName'] . '\n';
     $message .= 'Phone: ' . $data['phone'] . '\n';

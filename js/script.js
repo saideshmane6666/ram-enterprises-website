@@ -19,6 +19,18 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // ===========================
+    // SERVICE BUTTON WHATSAPP REDIRECT
+    // ===========================
+    const serviceButtons = document.querySelectorAll('.apply-service-btn');
+    serviceButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const service = this.getAttribute('data-service');
+            redirectToWhatsAppWithService(service);
+        });
+    });
 });
 
 // ===========================
@@ -96,6 +108,16 @@ function createWhatsAppMessage(name, phone, service, formType) {
     
     // Log for debugging
     console.log('WhatsApp Link:', whatsappLink);
+}
+
+// ===========================
+// REDIRECT TO WHATSAPP WITH SERVICE
+// ===========================
+
+function redirectToWhatsAppWithService(service) {
+    const message = `Hello! I am interested in getting more information about ${service} services from Ram Enterprises. Can you please help me with the details and pricing?`;
+    const whatsappLink = `https://wa.me/919075043523?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
 }
 
 // ===========================
@@ -230,6 +252,42 @@ window.addEventListener('scroll', function() {
 
 // This is handled natively by the href="tel:" links
 // Browsers automatically handle tel: protocol
+
+// ===========================
+// DIRECT WHATSAPP REDIRECT FOR SERVICES
+// ===========================
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Target action buttons in the service sections
+    const serviceButtons = document.querySelectorAll('.service-text .btn, .service-card .btn');
+    
+    serviceButtons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            // Ignore "View All Services" navigation buttons (accounts for EN, HI, MR translations)
+            const btnText = this.textContent.toLowerCase();
+            if (btnText.includes('view') || btnText.includes('देखें') || btnText.includes('पहा')) {
+                return; // Let normal navigation happen
+            }
+            
+            e.preventDefault();
+            
+            let serviceName = 'your services';
+            
+            // Extract the specific service name from the nearest card or detail layout heading
+            const serviceSection = this.closest('.service-layout, .service-card');
+            if (serviceSection) {
+                const heading = serviceSection.querySelector('h2, h3');
+                if (heading) serviceName = heading.textContent.trim();
+            }
+            
+            // Generate the customized WhatsApp message and open it
+            const message = `Hello! I am interested in the ${serviceName} service. Please provide more details.`;
+            const whatsappUrl = `https://wa.me/919075043523?text=${encodeURIComponent(message)}`;
+            
+            window.open(whatsappUrl, '_blank');
+        });
+    });
+});
 
 // ===========================
 // ANALYTICS HELPER
@@ -699,5 +757,5 @@ if (!document.querySelector('style[data-float]')) {
 
 console.log('Ram Enterprises Website Loaded Successfully');
 console.log('Phone: 9075043523');
-console.log('Email: ramdeshmuk30@gmail.com');
+console.log('Email: ramdeshmukh30@gmail.com');
 console.log('✨ Advanced Visual Effects Enabled - Enjoy the animations!');

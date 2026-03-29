@@ -38,7 +38,7 @@ Your professional, modern, and mobile-friendly business website is now ready!
 ### Step 2: Customize Information
 Update these key details:
 - **Phone:** 9075043523 → Your phone number (Search in all HTML files)
-- **Email:** ramdeshmuk30@gmail.com → Your email (Search in all HTML files)
+- **Email:** ramdeshmukh30@gmail.com → Your email (Search in all HTML files)
 - **Address:** Baramati, Pune → Your address (Update in contact.html)
 - **Owner Name:** Ram Deshmukh → Your name (Update in all HTML files)
 
@@ -336,7 +336,7 @@ See DEPLOYMENT_GUIDE.md for step-by-step instructions.
 ### Changing Phone/Email
 - Search for: 9075043523
 - Replace with: Your number
-- Search for: ramdeshmuk30@gmail.com
+- Search for: ramdeshmukh30@gmail.com
 - Replace with: Your email
 - Update in all files
 
@@ -413,7 +413,7 @@ See DEPLOYMENT_GUIDE.md for step-by-step instructions.
 | Find | Replace With |
 |------|--------------|
 | 9075043523 | Your phone |
-| ramdeshmuk30@gmail.com | Your email |
+| ramdeshmukh30@gmail.com | Your email |
 | Baramati, Pune | Your address |
 | Ram Deshmukh | Your name |
 | 2010 | Your start year |

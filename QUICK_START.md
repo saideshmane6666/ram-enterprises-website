@@ -28,7 +28,7 @@
 
 ### Important Contact Details
 - **Phone:** 9075043523
-- **Email:** ramdeshmuk30@gmail.com
+- **Email:** ramdeshmukh30@gmail.com
 - **WhatsApp:** wa.me/919075043523
 - **Location:** Baramati, Pune, Maharashtra 413102
 - **Hours:** 9 AM - 9 PM Daily
@@ -195,7 +195,7 @@ Replace: `Ram Deshmukh` with new name
 ### External Links
 - WhatsApp: `https://wa.me/919075043523`
 - Phone: `tel:9075043523`
-- Email: `mailto:ramdeshmuk30@gmail.com`
+- Email: `mailto:ramdeshmukh30@gmail.com`
 - Google Maps: Embedded in contact.html
 
 ---

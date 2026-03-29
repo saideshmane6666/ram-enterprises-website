@@ -193,7 +193,7 @@ Replace `logo.svg` with your custom logo
 **Ram Enterprises**
 - 📍 Baramati, Pune, India
 - 📞 9075043523
-- 📧 ramdeshmuk30@gmail.com
+- 📧 ramdeshmukh30@gmail.com
 - ⏰ Available: 9 AM - 9 PM (Monday to Sunday)
 
 ---

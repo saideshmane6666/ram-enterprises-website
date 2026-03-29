@@ -117,7 +117,7 @@ ram-enterprises-website/
 ### **STEP 1 - Customize Information**
 Update these in all HTML files:
 - Phone: 9075043523 → Your number
-- Email: ramdeshmuk30@gmail.com → Your email
+- Email: ramdeshmukh30@gmail.com → Your email
 - Owner: Ram Deshmukh → Your name
 - Address: Baramati, Pune → Your address
 
@@ -176,7 +176,7 @@ Happy Clients: 5000+
 
 Contact:
 📞 Phone: 9075043523
-📧 Email: ramdeshmuk30@gmail.com
+📧 Email: ramdeshmukh30@gmail.com
 📍 Address: Baramati, Pune, Maharashtra 413102
 ⏰ Hours: 9:00 AM – 9:00 PM Daily
 
@@ -241,7 +241,7 @@ All layouts fully tested and responsive ✅
 ### Week 1 - Setup
 - [ ] Review all pages (Start with index.html)
 - [ ] Update phone number (9075043523)
-- [ ] Update email address (ramdeshmuk30@gmail.com)
+- [ ] Update email address (ramdeshmukh30@gmail.com)
 - [ ] Update business address
 - [ ] Update owner name
 - [ ] Test on mobile device

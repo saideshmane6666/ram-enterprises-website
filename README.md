@@ -10,7 +10,7 @@ A modern, mobile-friendly, and professional business website for Ram Enterprises
 **Established:** Since 2010  
 **Happy Clients:** 5000+  
 **Location:** Baramati, Pune, Maharashtra 413102  
-**Contact:** 9075043523 | ramdeshmuk30@gmail.com
+**Contact:** 9075043523 | ramdeshmukh30@gmail.com
 
 ## 🎯 Features
 
@@ -231,7 +231,7 @@ Each page includes:
 **Owner:** Ram Deshmukh – Financial Insurance Advisor  
 **Address:** Baramati, Pune, Maharashtra 413102  
 **Phone:** 9075043523  
-**Email:** ramdeshmuk30@gmail.com  
+**Email:** ramdeshmukh30@gmail.com  
 **Working Hours:** 9:00 AM – 9:00 PM (Daily)
 
 ## 📧 Email Template for Follow-ups
