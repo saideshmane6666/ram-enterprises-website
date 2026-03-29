@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Ram Enterprises - Get your insurance quote or inquire about our services. Available 9 AM to 9 PM daily.">
+    <title>Contact Us - Ram Enterprises</title>
+    <link rel="stylesheet" href="/ram-enterprises-website/css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <h1>Ram Enterprises</h1>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">🌙</button>
+                <div class="language-selector">
+                    <button class="language-toggle" id="languageToggle" title="Select Language">EN ▼</button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="hi">हिंदी (Hindi)</button>
+                        <button class="lang-option" data-lang="mr">मराठी (Marathi)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with us today!</p>
+        </div>
+    </div>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <h3>📍 Address</h3>
+                    <p>Baramati, Pune</p>
+                    <p>Maharashtra 413102</p>
+                    <p>India</p>
+                </div>
+                <div class="contact-info-card">
+                    <h3>📞 Phone</h3>
+                    <p><a href="tel:9075043523">9075043523</a></p>
+                    <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Call us for quick assistance</p>
+                </div>
+                <div class="contact-info-card">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:ramdeshmuk30@gmail.com">ramdeshmuk30@gmail.com</a></p>
+                    <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Reach out via email</p>
+                </div>
+                <div class="contact-info-card">
+                    <h3>⏰ Working Hours</h3>
+                    <p>9:00 AM – 9:00 PM</p>
+                    <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"> Monday to Sunday</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Ram Enterprises - Full Name *</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Ram Enterprises - Phone Number *</label>
+                            <input type="tel" id="contactPhone" name="phone" required pattern="[0-9]{10}">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Ram Enterprises - Email Address</label>
+                            <input type="email" id="contactEmail" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Ram Enterprises - Subject *</label>
+                            <input type="text" id="contactSubject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactService">Ram Enterprises - Service Interested In</label>
+                            <select id="contactService" name="service">
+                                <option value="">-- Select a Service --</option>
+                                <option value="Life Insurance">Life Insurance</option>
+                                <option value="Health Insurance">Health Insurance</option>
+                                <option value="Motor Insurance">Motor Insurance</option>
+                                <option value="FASTag">FASTag Services</option>
+                                <option value="GPS Tracking">GPS Tracking</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Ram Enterprises - Message *</label>
+                            <textarea id="contactMessage" name="message" rows="5" required placeholder="Please provide details about your inquiry..."></textarea>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <a href="https://wa.me/919075043523?text=Hi!%20I%20have%20a%20question%20about%20your%20insurance%20services." target="_blank" class="btn btn-whatsapp">
+                                💬 Chat on WhatsApp
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact-map-container">
+                    <h2>Find Us on Map</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.4428741847987!2d75.79800599999999!3d18.73642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcf8f7f8f8f8f8f%3A0x0!2sBaramati%2C%20Pune%2C%20Maharashtra%20413102!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="450" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Direct Contact Options -->
+    <section class="direct-contact">
+        <div class="container">
+            <h2>Quick Contact Options</h2>
+            <div class="contact-buttons-grid">
+                <a href="tel:9075043523" class="contact-btn">
+                    <span class="contact-icon">📞</span>
+                    <span class="contact-label">Call Now</span>
+                    <span class="contact-value">9075043523</span>
+                </a>
+                <a href="https://wa.me/919075043523" target="_blank" class="contact-btn">
+                    <span class="contact-icon">💬</span>
+                    <span class="contact-label">WhatsApp</span>
+                    <span class="contact-value">Message Now</span>
+                </a>
+                <a href="mailto:ramdeshmuk30@gmail.com" class="contact-btn">
+                    <span class="contact-icon">📧</span>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">ramdeshmuk30@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>❓ What documents do I need for insurance?</h3>
+                    <p><strong>Answer:</strong> Documents required vary by type of insurance. For life insurance, typically PAN card and identity proof are needed. For motor insurance, you'll need vehicle registration and driving license. For health insurance, age proof and medical history may be required. Our team will guide you through the exact documents needed for your specific policy.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>❓ How long does the policy issuance take?</h3>
+                    <p><strong>Answer:</strong> We offer quick policy issuance. Life and health insurance policies are typically issued within 2-3 business days after documentation. Motor insurance can be issued same-day. FASTag can be registered and activated within 24 hours.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>❓ What is the insurance claim process?</h3>
+                    <p><strong>Answer:</strong> Our claims process is simple and hassle-free: (1) Notify us of the claim, (2) Submit required documents, (3) Our team processes the claim, (4) Settlement is made based on policy terms. We provide 24/7 support throughout the process.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>❓ How does FASTag work?</h3>
+                    <p><strong>Answer:</strong> FASTag is a device that uses RFID technology for automatic toll collection. Mount it on your vehicle's windshield, link it to a bank account, and pass through toll plazas without stopping. The toll fee is automatically deducted. We provide registration, recharge, and renewal support.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>❓ What can GPS Tracking do?</h3>
+                    <p><strong>Answer:</strong> Our GPS Tracking system provides real-time vehicle location, anti-theft alerts, speed monitoring, geofencing, and detailed trip analytics. It's ideal for personal vehicle safety or commercial fleet management. You can track your vehicle 24/7 via our mobile app.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>❓ Do I get discount on premiums?</h3>
+                    <p><strong>Answer:</strong> Yes! We offer various discounts based on policy type, coverage period, and claim-free history. Additionally, many insurance companies offer cashback or discounts through us. Our team can help identify all applicable discounts for your situation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>❓ Can I renew my existing policy?</h3>
+                    <p><strong>Answer:</strong> Absolutely! We handle renewals for all types of insurance. You can renew online or contact us directly. We'll ensure timely renewal so there's no gap in your coverage. Early renewal often comes with additional benefits.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>❓ What are your working hours?</h3>
+                    <p><strong>Answer:</strong> We're available 9:00 AM to 9:00 PM every day (Monday to Sunday). You can reach us by phone, email, or WhatsApp during these hours. Outside working hours, you can still submit inquiries and we'll respond the next available time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Disclaimer -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-content">
+                <h2>Why Trust Ram Enterprises?</h2>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <h3>🛡️ Licensed & Authorized</h3>
+                        <p>We are authorized partners of major insurance companies and operate under legal compliance.</p>
+                    </div>
+                    <div class="trust-item">
+                        <h3>✅ Transparent Policies</h3>
+                        <p>No hidden charges. We clearly explain all terms and conditions before enrollment.</p>
+                    </div>
+                    <div class="trust-item">
+                        <h3>🤝 Customer Support</h3>
+                        <p>Dedicated support team available 9 AM to 9 PM for all your queries and assistance.</p>
+                    </div>
+                    <div class="trust-item">
+                        <h3>📋 Full Transparency</h3>
+                        <p><strong>Disclaimer:</strong> We are service providers and partners of insurance companies, not the insurer. The actual insurance is provided by the respective insurance company as per policy terms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Contact us today and get a personalized insurance solution</p>
+            <div class="cta-buttons">
+                <a href="#contactForm" class="btn btn-primary btn-large">Fill Inquiry Form</a>
+                <a href="tel:9075043523" class="btn btn-secondary btn-large">📞 Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <h2>Our Trusted Insurance Partners</h2>
+            <p style="text-align: center; margin-bottom: 40px;">We are associated with leading insurance companies in India</p>
+            
+            <h3 style="text-align: center; color: #1a7ac8; margin: 30px 0 20px;">Life & Health Insurance Partners</h3>
+            <div class="partners-list">
+                <div class="partner">Tata AIA Life Insurance</div>
+                <div class="partner">Care Health Insurance</div>
+            </div>
+
+            <h3 style="text-align: center; color: #1a7ac8; margin: 30px 0 20px;">General Insurance Partners</h3>
+            <div class="partners-list">
+                <div class="partner">ACKO General Insurance Ltd</div>
+                <div class="partner">Bajaj Allianz General Insurance</div>
+                <div class="partner">Cholamandalam MS General Insurance</div>
+                <div class="partner">Future Generali India Insurance</div>
+                <div class="partner">Go Digit General Insurance</div>
+                <div class="partner">HDFC ERGO General Insurance</div>
+                <div class="partner">ICICI Lombard General Insurance</div>
+                <div class="partner">IFFCO Tokio General Insurance</div>
+                <div class="partner">Kotak Mahindra General Insurance</div>
+                <div class="partner">Liberty General Insurance</div>
+                <div class="partner">Magma HDI General Insurance</div>
+                <div class="partner">National Insurance Co. Ltd</div>
+                <div class="partner">Navi General Insurance</div>
+                <div class="partner">Raheja QBE General Insurance</div>
+                <div class="partner">Reliance General Insurance</div>
+                <div class="partner">Royal Sundaram General Insurance</div>
+                <div class="partner">SBI General Insurance</div>
+                <div class="partner">Shriram General Insurance</div>
+                <div class="partner">Tata AIG General Insurance</div>
+                <div class="partner">The New India Assurance</div>
+                <div class="partner">The Oriental Insurance Co.</div>
+                <div class="partner">United India Insurance</div>
+                <div class="partner">Universal Sompo General Insurance</div>
+                <div class="partner">Zuno General Insurance</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ram Enterprises</h3>
+                    <p><strong>Tagline:</strong> Your Trusted Partner for Insurance & Smart Vehicle Solutions</p>
+                    <p><strong>Owner:</strong> Ram Deshmukh – Financial Insurance Advisor</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 Baramati, Pune, Maharashtra 413102</p>
+                    <p>📞 <a href="tel:9075043523">9075043523</a></p>
+                    <p>📧 <a href="mailto:ramdeshmuk30@gmail.com">ramdeshmuk30@gmail.com</a></p>
+                    <p>⏰ 9:00 AM – 9:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="#disclaimer">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ram Enterprises. All rights reserved.</p>
+                <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Disclaimer:</strong> We are service providers and partners of insurance companies, not the insurer. Terms and conditions apply.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/ram-enterprises-website/js/script.js"></script>
+    <script src="/ram-enterprises-website/js/theme-language.js"></script>
+</body>
+</html>

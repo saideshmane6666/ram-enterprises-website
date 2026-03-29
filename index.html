@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ram Enterprises - Your Trusted Partner for Insurance & Smart Vehicle Solutions since 2010. Life, Health, Motor Insurance, FASTag, and GPS Tracking services.">
+    <meta name="keywords" content="insurance services, life insurance, health insurance, motor insurance, FASTag, GPS tracking, Pune, Baramati">
+    <meta name="author" content="Ram Enterprises">
+    <meta name="robots" content="index, follow">
+    <title>Ram Enterprises - Insurance & Vehicle Solutions | Since 2010</title>
+    <link rel="stylesheet" href="/ram-enterprises-website/css/style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='75'%3E🛡️%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <h1>Ram Enterprises</h1>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">🌙</button>
+                <div class="language-selector">
+                    <button class="language-toggle" id="languageToggle" title="Select Language">EN ▼</button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="hi">हिंदी (Hindi)</button>
+                        <button class="lang-option" data-lang="mr">मराठी (Marathi)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Secure Your Life, Health & Vehicles</h1>
+            <p class="hero-subtitle">Your Trusted Partner for Insurance & Smart Vehicle Solutions</p>
+            <div class="hero-highlights">
+                <span class="highlight-badge">✓ Serving Since <strong>2010</strong></span>
+                <span class="highlight-badge">✓ <strong>5000+</strong> Happy Clients</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                <a href="tel:9075043523" class="btn btn-secondary">Call Now: 9075043523</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Services Section -->
+    <section class="quick-services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="/ram-enterprises-website/images/life-insurance.png" alt="Life Insurance" style="width: 70%; height: auto; max-height: 70px; object-fit: contain; border-radius: 4px; margin: 0 auto 15px; display: block;">
+                    <h3>Life Insurance</h3>
+                    <p>Financial protection for your family's future</p>
+                </div>
+                <div class="service-card">
+                    <img src="/ram-enterprises-website/images/health-insurance.png" alt="Health Insurance" style="width: 85%; height: auto; max-height: 100px; object-fit: contain; border-radius: 4px; margin: 0 auto 15px; display: block;">
+                    <h3>Health Insurance</h3>
+                    <p>Comprehensive health coverage for peace of mind</p>
+                </div>
+                <div class="service-card">
+                    <img src="/ram-enterprises-website/images/motor-insurance.png" alt="Motor Insurance" style="width: 85%; height: auto; max-height: 100px; object-fit: contain; border-radius: 4px; margin: 0 auto 15px; display: block;">
+                    <h3>Motor Insurance</h3>
+                    <p>Complete vehicle protection with quick issuance</p>
+                </div>
+                <div class="service-card">
+                    <img src="/ram-enterprises-website/images/fastag.jpg" alt="FASTag Services" style="width: 80%; height: auto; max-height: 80px; object-fit: contain; border-radius: 4px; margin: 0 auto 15px; display: block;">
+                    <h3>FASTag Services</h3>
+                    <p>Fast toll payments with no manual delays</p>
+                </div>
+                <div class="service-card">
+                    <img src="/ram-enterprises-website/images/gps-tracking.jpg" alt="GPS Tracking" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 15px;">
+                    <h3>GPS Tracking</h3>
+                    <p>Real-time vehicle tracking and anti-theft alerts</p>
+                </div>
+            </div>
+            <div class="button-group">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section id="quote-form" class="quote-section">
+        <div class="container">
+            <h2>Get Your Free Quote</h2>
+            <form class="quote-form" id="quoteForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">Ram Enterprises - Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Ram Enterprises - Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Ram Enterprises - Email Address</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Ram Enterprises - Service Required *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a Service</option>
+                            <option value="Life Insurance">Life Insurance</option>
+                            <option value="Health Insurance">Health Insurance</option>
+                            <option value="Motor Insurance">Motor Insurance</option>
+                            <option value="FASTag">FASTag Services</option>
+                            <option value="GPS Tracking">GPS Tracking</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ram Enterprises - Message</label>
+                    <textarea id="message" name="message" rows="3" placeholder="Tell us about your requirement..."></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary">Get Quote</button>
+                    <a href="https://wa.me/919075043523?text=Hi!%20I%20want%20to%20inquire%20about%20insurance%20services" target="_blank" class="btn btn-whatsapp">
+                        💬 WhatsApp Us
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Ram Enterprises?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>📅 Since 2010</h3>
+                    <p>Over a decade of trusted service and expertise</p>
+                </div>
+                <div class="feature">
+                    <h3>👥 5000+ Clients</h3>
+                    <p>Thousands of satisfied customers across India</p>
+                </div>
+                <div class="feature">
+                    <h3>🏆 Verified Partners</h3>
+                    <p>Associated with top insurance companies</p>
+                </div>
+                <div class="feature">
+                    <h3>💼 Expert Advisors</h3>
+                    <p>Professional guidance from experienced consultants</p>
+                </div>
+                <div class="feature">
+                    <h3>⏰ Extended Hours</h3>
+                    <p>Available 9 AM to 9 PM for your convenience</p>
+                </div>
+                <div class="feature">
+                    <h3>📱 Online Support</h3>
+                    <p>Quick response via Phone, Email & WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Ram Enterprises made my insurance process incredibly easy. The staff is knowledgeable and helpful!"</p>
+                    <h4>- Priya Sharma</h4>
+                    <span class="client-type">Health Insurance</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Best motor insurance experience. Quick processing and excellent support from the team."</p>
+                    <h4>- Rajesh Patil</h4>
+                    <span class="client-type">Motor Insurance</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The GPS tracking system has given me complete peace of mind. Highly recommended!"</p>
+                    <h4>- Amit Desai</h4>
+                    <span class="client-type">GPS Tracking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Protect Your Future?</h2>
+            <p>Contact us today for a personalized insurance solution</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary btn-large">Contact Us</a>
+                <a href="tel:9075043523" class="btn btn-secondary btn-large">📞 9075043523</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ram Enterprises</h3>
+                    <p><strong>Tagline:</strong> Your Trusted Partner for Insurance & Smart Vehicle Solutions</p>
+                    <p><strong>Owner:</strong> Ram Deshmukh – Financial Insurance Advisor</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 Baramati, Pune, Maharashtra 413102</p>
+                    <p>📞 <a href="tel:9075043523">9075043523</a></p>
+                    <p>📧 <a href="mailto:ramdeshmuk30@gmail.com">ramdeshmuk30@gmail.com</a></p>
+                    <p>⏰ 9:00 AM – 9:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="#disclaimer">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ram Enterprises. All rights reserved.</p>
+                <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Disclaimer:</strong> We are service providers and partners of insurance companies, not the insurer. Terms and conditions apply.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/ram-enterprises-website/js/script.js"></script>
+    <script src="/ram-enterprises-website/js/theme-language.js"></script>
+</body>
+</html>
