@@ -3,6 +3,8 @@
 // ===========================
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM Content Loaded');
+    
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navLinks = document.getElementById('navLinks');
 
@@ -24,12 +26,33 @@ document.addEventListener('DOMContentLoaded', function() {
     // SERVICE BUTTON WHATSAPP REDIRECT
     // ===========================
     const serviceButtons = document.querySelectorAll('.apply-service-btn');
+    console.log('Found service buttons:', serviceButtons.length);
+    
     serviceButtons.forEach(button => {
         button.addEventListener('click', function(e) {
+            console.log('Button clicked! Service:', this.getAttribute('data-service'));
             e.preventDefault();
             const service = this.getAttribute('data-service');
             redirectToWhatsAppWithService(service);
         });
+    });
+    
+    // ===========================
+    // ACTIVE NAV LINK HANDLER
+    // ===========================
+    const currentLocation = location.pathname;
+    const menuItems = document.querySelectorAll('.nav-links a');
+
+    menuItems.forEach(item => {
+        const href = item.getAttribute('href');
+        // Check if the href matches the current page
+        if (href === currentLocation || 
+            (currentLocation === '/' && href === 'index.html') ||
+            currentLocation.includes(href.replace('/', ''))) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
     });
 });
 
@@ -115,8 +138,10 @@ function createWhatsAppMessage(name, phone, service, formType) {
 // ===========================
 
 function redirectToWhatsAppWithService(service) {
+    console.log('Redirecting to WhatsApp for service:', service);
     const message = `Hello! I am interested in getting more information about ${service} services from Ram Enterprises. Can you please help me with the details and pricing?`;
     const whatsappLink = `https://wa.me/919075043523?text=${encodeURIComponent(message)}`;
+    console.log('WhatsApp Link:', whatsappLink);
     window.open(whatsappLink, '_blank');
 }
 
@@ -147,27 +172,6 @@ function showSuccessMessage(form, customerName) {
     // Scroll to success message
     successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
-
-// ===========================
-// ACTIVE NAV LINK HANDLER
-// ===========================
-
-document.addEventListener('DOMContentLoaded', function() {
-    const currentLocation = location.pathname;
-    const menuItems = document.querySelectorAll('.nav-links a');
-
-    menuItems.forEach(item => {
-        const href = item.getAttribute('href');
-        // Check if the href matches the current page
-        if (href === currentLocation || 
-            (currentLocation === '/' && href === 'index.html') ||
-            currentLocation.includes(href.replace('/', ''))) {
-            item.classList.add('active');
-        } else {
-            item.classList.remove('active');
-        }
-    });
-});
 
 // ===========================
 // SMOOTH SCROLL ANCHOR LINKS
