@@ -787,7 +787,7 @@ body.dark-mode button:not(.lang-option):not(.theme-toggle):not(.language-toggle)
 body.dark-mode .cta-section h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
-    color: #ffff00;
+    color: #ffffff;
     text-shadow: none;
     position: relative;
     z-index: 11;
