@@ -329,7 +329,12 @@ body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
 }
 
 body.dark-mode .cta-section {
-    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, #1a3a52 0%, #0f1f2e 100%);
+}
+
+body.dark-mode .cta-section h2,
+body.dark-mode .cta-section p {
+    color: #ffffff !important;
 }
 
 body.dark-mode button:not(.lang-option):not(.theme-toggle):not(.language-toggle):not(.mobile-menu-btn) {
@@ -776,35 +781,23 @@ body.dark-mode button:not(.lang-option):not(.theme-toggle):not(.language-toggle)
 
 .cta-section {
     padding: 80px 20px;
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
-    color: var(--white);
+    background: linear-gradient(135deg, #1a3a52 0%, #0f1f2e 100%) !important;
+    color: #ffffff !important;
     text-align: center;
     position: relative;
     z-index: 10;
 }
 
-.cta-section h2,
-body.dark-mode .cta-section h2 {
+.cta-section h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
-    color: #ffffff;
-    text-shadow: none;
-    position: relative;
-    z-index: 11;
-    font-weight: 700;
-    letter-spacing: normal;
+    color: #ffffff !important;
 }
 
-.cta-section p,
-body.dark-mode .cta-section p {
+.cta-section p {
     font-size: 1.2rem;
     margin-bottom: 40px;
-    opacity: 1;
-    font-weight: 600;
-    color: #ffffff;
-    text-shadow: none;
-    position: relative;
-    z-index: 11;
+    color: #ffffff !important;
 }
 
 .cta-buttons {
