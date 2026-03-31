@@ -2290,11 +2290,17 @@ button, a, input, select, textarea {
    CTA SECTION - FINAL OVERRIDE
    Must be at the END of file to win all specificity battles
    =========================== */
+@keyframes shimmerGold {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 .cta-section,
 body.dark-mode .cta-section,
 body.dark-mode section.cta-section {
-    background: linear-gradient(135deg, #1a3a52 0%, #0f1f2e 100%) !important;
-    color: #ffffff !important;
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%) !important;
+    padding: 100px 20px !important;
 }
 
 .cta-section h2,
@@ -2302,7 +2308,17 @@ body.dark-mode section.cta-section {
 body.dark-mode .cta-section h2,
 body.dark-mode .cta-section .container h2,
 body.dark-mode section.cta-section h2 {
-    color: #ffffff !important;
+    background: linear-gradient(90deg, #ffd700, #ff8c00, #ffe066, #ffd700) !important;
+    background-size: 300% 100% !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    animation: shimmerGold 5s ease-in-out infinite !important;
+    font-size: 3.2rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 20px !important;
+    /* Soft glowing drop-shadow behind the transparent text */
+    filter: drop-shadow(0px 0px 10px rgba(255, 215, 0, 0.5));
 }
 
 .cta-section p,
@@ -2310,5 +2326,8 @@ body.dark-mode section.cta-section h2 {
 body.dark-mode .cta-section p,
 body.dark-mode .cta-section .container p,
 body.dark-mode section.cta-section p {
-    color: #ffffff !important;
+    color: #e2e8f0 !important;
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+    margin-bottom: 45px !important;
 }
