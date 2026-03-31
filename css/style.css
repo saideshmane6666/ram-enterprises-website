@@ -2287,6 +2287,95 @@ button, a, input, select, textarea {
 }
 
 /* ===========================
+   PREMIUM ELITE ANIMATIONS & GLASSMORPHISM
+   =========================== */
+
+/* 1. Glassmorphism Navbar */
+.navbar {
+    background-color: rgba(26, 58, 82, 0.85) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+body.dark-mode .navbar {
+    background-color: rgba(26, 26, 26, 0.85) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* 2. Premium Button Shimmer Sweep */
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn-primary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+    transform: skewX(-25deg);
+    animation: premiumShine 5s infinite cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 2;
+}
+@keyframes premiumShine {
+    0% { left: -150%; }
+    15% { left: 200%; }
+    100% { left: 200%; }
+}
+
+/* 3. Intense Magnetic Glow on Card Hover */
+.service-card, .feature, .testimonial-card, .value-card {
+    transition: box-shadow 0.4s ease, border-color 0.4s ease !important;
+}
+.service-card:hover, .feature:hover, .testimonial-card:hover, .value-card:hover {
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2), 0 0 20px rgba(212, 175, 55, 0.4) !important;
+    border-color: var(--accent-green) !important;
+}
+
+/* 4. Elegant Gentle Pulse for Contact Buttons */
+.btn-secondary, .btn-whatsapp {
+    animation: gentlePulse 3s infinite ease-in-out;
+}
+@keyframes gentlePulse {
+    0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+    70% { box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+/* 5. Floating Glow behind Hero Content (Aura) */
+.hero-content {
+    position: relative;
+}
+.hero-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.15) 0%, transparent 60%);
+    z-index: -1;
+    pointer-events: none;
+    animation: auraPulse 6s infinite alternate ease-in-out;
+}
+@keyframes auraPulse {
+    0% { opacity: 0.5; transform: translate(-50%, -50%) scale(0.9); }
+    100% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+/* 6. Smooth Internal Image Zoom out on Hover */
+.service-card img {
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.service-card:hover img {
+    transform: scale(1.15) translateZ(40px) !important; 
+}
+
+/* ===========================
    CTA SECTION - FINAL OVERRIDE
    Must be at the END of file to win all specificity battles
    =========================== */
