@@ -2285,3 +2285,30 @@ button, a, input, select, textarea {
         padding: 20px;
     }
 }
+
+/* ===========================
+   CTA SECTION - FINAL OVERRIDE
+   Must be at the END of file to win all specificity battles
+   =========================== */
+.cta-section,
+body.dark-mode .cta-section,
+body.dark-mode section.cta-section {
+    background: linear-gradient(135deg, #1a3a52 0%, #0f1f2e 100%) !important;
+    color: #ffffff !important;
+}
+
+.cta-section h2,
+.cta-section .container h2,
+body.dark-mode .cta-section h2,
+body.dark-mode .cta-section .container h2,
+body.dark-mode section.cta-section h2 {
+    color: #ffffff !important;
+}
+
+.cta-section p,
+.cta-section .container p,
+body.dark-mode .cta-section p,
+body.dark-mode .cta-section .container p,
+body.dark-mode section.cta-section p {
+    color: #ffffff !important;
+}
